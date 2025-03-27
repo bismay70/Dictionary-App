@@ -1,0 +1,100 @@
+@media (max-width: 580px) {
+    .history-container {
+        position: static;
+        transform: none;
+        display: none; /* Hidden by default */
+        width: 100%;
+        background: white;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .show-history .history-container {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 80%; 
+        padding: 25px; 
+    }
+}
+
+@media screen and (max-width:1000px){
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: white;
+        transition: left 0.2s ease;
+    }
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0,0,0,0.2);
+    }
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+    }
+    .navbar :where(#menu-close-button,#menu-open-button){
+        display: block;
+        font-size: 1.12rem;
+    }
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .navbar #menu-open-button {
+        color: white;
+    }
+    .navbar .nav-menu .nav-link {
+        color: black;
+        font-size: 1.12rem;
+        display: block;
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 800px) {
+    .history-container {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
