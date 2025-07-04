@@ -29,7 +29,7 @@ box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1; /* Ensures it takes up available space */
+    flex-grow: 1; 
 }
 
 .nav-logo {
@@ -37,7 +37,7 @@ box-sizing: border-box;
     font-weight: bold;
     color: white;
     text-align: center;
-    flex-grow: 1; /* Centers the logo */
+    flex-grow: 1; 
 }
 
 .toggle-btn {
@@ -49,7 +49,7 @@ box-sizing: border-box;
     background: black;
     color: white;
     transition: background 0.3s, color 0.3s;
-    margin-left: auto; /* Pushes the toggle button to center */
+    margin-left: auto; 
     position: absolute;
     right: 20px;
 }
