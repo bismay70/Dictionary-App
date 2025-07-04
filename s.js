@@ -110,7 +110,7 @@ toggleBtn.addEventListener("click", () => {
 
     if (body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
-         body.style.background = "linear-gradient(to right,rgb(125, 81, 112),rgb(70, 14, 71))";
+        body.style.background = "linear-gradient(to right, #013220, #064420)";
         document.querySelector(".history-container").style.background="black";
        
         toggleBtn.innerText = "☀️";
